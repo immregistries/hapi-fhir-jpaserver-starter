@@ -1,4 +1,6 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     url: 'jdbc:h2:file:./target/database/h2'
     username: sa
@@ -31,6 +33,7 @@ spring:
 hapi:
   fhir:
     defer_indexing_for_codesystems_of_size: 101
+    empi_enabled:true
 #    implementationguides:
 #      -
 #        url: https://build.fhir.org/ig/hl7dk/dk-medcom/branches/corrections/package.tgz

@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties
 public class AppProperties {
 
-  private Boolean empi_enabled = false;
+  private Boolean empi_enabled = true;
   private Boolean allow_cascading_deletes = false;
   private Boolean allow_contains_searches = true;
   private Boolean allow_external_references = false;
