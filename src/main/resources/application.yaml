@@ -33,7 +33,8 @@ spring:
 hapi:
   fhir:
     defer_indexing_for_codesystems_of_size: 101
-    empi_enabled:true
+    enpi_enabled: true
+
 #    implementationguides:
 #      -
 #        url: https://build.fhir.org/ig/hl7dk/dk-medcom/branches/corrections/package.tgz
@@ -93,7 +94,7 @@ hapi:
       -
           id: home
           name: Local Tester
-          server_address: 'http://localhost:8080/ROOT/fhir'
+          server_address: 'http://localhost:8080/fhir'
           refuse_to_fetch_third_party_urls: false
           fhir_version: R4
       -
